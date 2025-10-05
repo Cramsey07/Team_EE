@@ -1,1 +1,1 @@
-aas
+The problem we are trying to solve in our project has to do with authentication. We intend on creating an authentication program in which can prompt users to input such as a password or a key. This program intends to be more complex than this, but it is just an idea of what we could do, and build on it. This authentication could also include multifactor authentication, etc. We want to smart and build upon as the weeks go on. For right now, we just have the idea of an authentication program.
