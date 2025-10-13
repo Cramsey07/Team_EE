@@ -1,3 +1,40 @@
-The problem we are trying to solve in our project has to do with authentication. We intend on creating an authentication program in which can prompt users to input such as a password or a key. This program intends to be more complex than this, but it is just an idea of what we could do, and build on it. This authentication could also include multifactor authentication, etc. We want to be smart and build upon as the weeks go on. For right now, we just have the idea of an authentication program.
+public class PasswordValidator {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter your password: ");
+String password = scanner.nextLine();
 
-Github repository url - https://github.com/Cramsey07/Team_EE.git
+        if (isValidPassword(password)) {
+            System.out.println("Password is strong.");
+        } else {
+            System.out.println("Password does not meet the required conditions.");
+        }
+
+        scanner.close();
+        int java;
+    }
+
+    public static boolean isValidPassword(String password) {
+        if (password.length() < 8) {
+            return false; // Must be at least 8 characters
+        }
+
+        boolean hasDigit = false;
+        boolean hasSpecialChar = false;
+        String specialCharacters = "!@#$%^&*()_+-=[]{};:'\"\\|,.<>?/";
+
+        for (char ch : password.toCharArray()) {
+            if (Character.isDigit(ch)) {
+                hasDigit = true;
+            }
+            if (specialCharacters.indexOf(ch) != -1) {
+                hasSpecialChar = true;
+            }
+            if (hasDigit && hasSpecialChar) {
+                return true; // If both conditions are met, no need to check further
+            }
+        }
+
+        return false;
+
+    }

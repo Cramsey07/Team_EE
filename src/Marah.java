@@ -1,3 +1,7 @@
+import java.util.Scanner;
 public class Marah {
-String message = "Hello World";
+    Scanner input = new Scanner(System.in);
+    System.out.println();
+    String password = input.nextLine();
+
 }
