@@ -13,6 +13,7 @@ public class PasswordValidator {
         }
 
         scanner.close();
+        int java;
     }
 
     public static boolean isValidPassword(String password) {
