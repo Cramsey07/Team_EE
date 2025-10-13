@@ -9,7 +9,7 @@ String password = scanner.nextLine();
         } else {
             System.out.println("Password does not meet the required conditions.");
         }
-
+hjkkhk
         scanner.close();
         int java;
     }
