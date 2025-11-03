@@ -23,4 +23,3 @@
 
                 CMD ["java", "HelloWorld"]
 
-                .github/workflows/docker.yml
