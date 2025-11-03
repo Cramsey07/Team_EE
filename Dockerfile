@@ -22,3 +22,5 @@
                 RUN javac *.java
 
                 CMD ["java", "HelloWorld"]
+
+                .github/workflows/docker.yml
