@@ -1,6 +1,7 @@
 
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -90,6 +91,8 @@ public class Main {
         }
         System.out.println("Correct");
         System.out.println("");
+        boolean keepAsking3 = true;
+        while (keepAsking3) {
         System.out.println("What would you like to access?");
         System.out.println("1. Staff Info");
         System.out.println("2. My Profile");
@@ -99,9 +102,22 @@ public class Main {
             case 1://Staff Info
                 System.out.println("Enter your employee ID:");
                 String ID = scan.next();
-                System.out.println("Your Info:");
-
+                    System.out.println("Your Info:");
+                    String[][] information = {
+                            {"CURRENT CASES: 2", "FILES: 1", "[REDACTED"},
+                            {"UNREAD EMAILS: 20037590", "CASES COMPLETETED: 2000", "UNABLE TO PROCESS"}
+                    };
+                    System.out.println(Arrays.deepToString(information));
+                    System.out.println("");
+                    System.out.println("Anything else?");
+                    String answer3 = scan.next();
+                    if (!answer3.equalsIgnoreCase("yes")) {
+                        keepAsking2 = false;
+                    }
+                    System.out.println("Have a nice day");
+                    break;
+                }
+                }
 
         }
         }
-    }
