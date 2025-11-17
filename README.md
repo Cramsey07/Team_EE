@@ -24,6 +24,11 @@ If you want even smaller images, consider jlink or jpackage or using a minimal r
 
 The use of docker today 11/3 was to push the code to the cloud essentially.
 
+---------------------------------------------------------------------------------------
+
+We used JavaDocs as a way to explain code, such as the use of classes, methods, etc.
+
+It's a clean, easy way of explaining to code of our project.
 Everyone is able to pull and run the code and see the ouput.
 
 When code is added on intellij, it automatically processes and the action happens on github is automatically processed.
