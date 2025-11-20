@@ -8,6 +8,7 @@ public class Main {
         System.out.println("Welcome to the Department of Defense: Who is using this program today?");
         System.out.println("1. Civilian");
         System.out.println("2. Staff");
+        System.out.println("Choose 1 for Civilian or 2 for Staff: ");
         int choice = scan.nextInt();
         String password = scan.nextLine();
         switch (choice) {

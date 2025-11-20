@@ -16,14 +16,9 @@ public class Civilian {
                     System.out.println("");
                     break;
                 case 2: //Hours of Operation
-                    System.out.println("Hours");
+                    System.out.println("Monday-Friday: 6AM-11:59PM");
+                    System.out.println("Saturday-Sunday: 8AM-1AM");
                     System.out.println("");
-                    System.out.println("Anything else we can help you with?");
-                    String answer = scan.next();
-                    if (!answer.equalsIgnoreCase("yes")) {
-                        keepAsking = false;
-                    }
-                    System.out.println("Have a nice day");
                     break;
                 case 3: //Internships
                     System.out.println("Current opportunites: ");
@@ -33,13 +28,13 @@ public class Civilian {
                     System.out.println("- " + opportunities[1]);
                     System.out.println("- " + opportunities[2]);
                     System.out.println("");
-                    System.out.println("Anything else we can help you with?");
-                    String answer2 = scan.next();
-                    if (!answer2.equalsIgnoreCase("yes")) {
-                        keepAsking = false;
-                    }
-                    System.out.println("Have a nice day");
                     break;
+            }
+            System.out.println("Anything else we can help you with?");
+            String answer = scan.next();
+            if (!answer.equalsIgnoreCase("yes")) {
+                keepAsking = false;
+                System.out.println("Have a nice day");
             }
         }
     }
