@@ -1,5 +1,5 @@
                 # Use the OpenJDK 23 image as the base image
-                FROM eclipse-temurin:23-jdk:23
+                FROM openjdk:23
                 
                 # Create a new app directory for my application files
                 RUN mkdir /app
