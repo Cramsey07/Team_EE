@@ -1,5 +1,6 @@
 
-                    FROM openjdk:21-jre-slim
+                    # Eclipse Temurin (LTS) - Highly reliable alternative
+                    FROM eclipse-temurin:21-jre-jammy
 
 
                     RUN mkdir /app
@@ -13,7 +14,7 @@
                 # Run the Main class
                     CMD java Main
 
-                    FROM openjdk:21-jre-slim
+                    FROM eclipse-temurin:21-jre-jammy
                     WORKDIR /app
                     COPY src/ /app/
                     RUN javac *.java
