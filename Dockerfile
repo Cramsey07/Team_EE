@@ -13,7 +13,7 @@
                 # Run the Main class
                     CMD java Main
 
-                    FROM openjdk:23
+                    FROM openjdk:25
                     WORKDIR /app
                     COPY src/ /app/
                     RUN javac *.java
