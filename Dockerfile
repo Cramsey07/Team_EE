@@ -1,6 +1,6 @@
 
-                    # Eclipse Temurin (LTS) - Highly reliable alternative
-                    FROM eclipse-temurin:21-jre-jammy
+                    # Change your Dockerfile, Line 16 (or where your FROM is)
+                    FROM openjdk:21-jdk-slim
 
 
                     RUN mkdir /app
@@ -14,7 +14,7 @@
                 # Run the Main class
                     CMD java Main
 
-                    FROM eclipse-temurin:21-jre-jammy
+                    FROM openjdk:21-jdk-slim
                     WORKDIR /app
                     COPY src/ /app/
                     RUN javac *.java
