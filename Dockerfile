@@ -2,6 +2,7 @@
                     # Change your Dockerfile, Line 16 (or where your FROM is)
                     FROM openjdk:21-jdk-slim
 
+                    WORKDIR /app
 
                     RUN mkdir /app
 
