@@ -1,5 +1,5 @@
                 # Use the OpenJDK 23 image as the base image
-                    FROM openjdk:11
+                    FROM openjdk:11-jre-slim
 
                 # Create a new app directory for my application files
                     RUN mkdir /app
@@ -13,7 +13,7 @@
                 # Run the Main class
                     CMD java Main
 
-                    FROM openjdk:11
+                    FROM openjdk:11-jre-slim
                     WORKDIR /app
                     COPY src/ /app/
                     RUN javac *.java
