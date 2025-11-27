@@ -2,8 +2,8 @@ FROM amazoncorrtto:17
 
 WORKDIR /app
 
-COPY src ./src
+COPY src/Main.java/Civillian.java/Staff.java/Employee_ID.java/Password.java .
 
-RUN javac src/*.java
+RUN javac Main.java
 
-CMD ["java", "-cp", "src", "Main"]
+CMD ["java", "Main", "Civilian", "Staff", "Employee_ID", "Password"]
