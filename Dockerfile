@@ -2,8 +2,8 @@ FROM amazoncorretto:17
 
 WORKDIR /app
 
-COPY src/main.java .
+COPY src/Main.java .
 
-RUN javac main.java
+RUN javac Main.java
 
 CMD ["java", "Main"]
