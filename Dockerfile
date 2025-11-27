@@ -1,4 +1,4 @@
-FROM amazoncorrtto:17
+FROM amazoncorretto:17
 
 WORKDIR /app
 
