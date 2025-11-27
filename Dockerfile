@@ -1,9 +1,9 @@
-FROM amazoncorretto:17
+FROM amazoncorrtto
 
 WORKDIR /app
 
-COPY src/Main.java .
+COPY src ./src
 
-RUN javac Main.java
+RUN javac src/*.java
 
-CMD ["java", "Main"]
+CMD ["java", "-cp", "src", "Main"]
