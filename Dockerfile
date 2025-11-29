@@ -6,5 +6,5 @@ COPY src ./src
 
 RUN javac src/*.java
 
-CMD java ["java", "-cp", "src", "Main"]
+CMD ["java", "-cp", "src", "Main"]
 
