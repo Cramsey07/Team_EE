@@ -2,9 +2,10 @@ FROM amazoncorretto:17
 
 WORKDIR /app
 
-COPY src ./src
+COPY src/*.java .
 
-RUN javac src/*.java
+RUN javac *.java
 
-CMD ["java", "-cp", "src", "Main"]
+CMD ["java", "Main"]
+
 
