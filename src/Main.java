@@ -16,7 +16,7 @@ public class Main {
                 Civilian.Civilian(scan);
                 break;
             case 2://Staff
-                Password.Staff(scan);
+                Staff.Staff(scan);
                 break;
             }
         }

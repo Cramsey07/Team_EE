@@ -34,7 +34,7 @@ public class Civilian {
             String answer = scan.next();
             if (!answer.equalsIgnoreCase("yes")) {
                 keepAsking = false;
-                System.out.println("Have a nice day");
+                Have_A_Nice_Day obj2 = new Have_A_Nice_Day("Have a nice day" + ", Thank you.");
             }
         }
     }

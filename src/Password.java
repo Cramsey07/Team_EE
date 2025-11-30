@@ -20,18 +20,19 @@ public class Password {
                 if (specialCharacters.indexOf(ch) != -1) {
                     hasSpecialChar = true;
                 }
-                if (password.length() > 8 && hasDigit && hasSpecialChar) {
-                    keepAsking2 = false;
+
+            }
+            if (password.length() > 8 && hasDigit && hasSpecialChar) {
+                keepAsking2 = false;
+            } else {
+                attempts++;
+                if (attempts < max) {
+                    System.out.println();
+                    System.out.println("Please try again");
+                    System.out.println();
                 } else {
-                    attempts++;
-                    if (attempts < max) {
-                        System.out.println();
-                        System.out.println("Please try again");
-                        System.out.println();
-                    } else {
-                        System.out.println("You are unauthorized personnel, you will be locked out of this program");
-                        System.exit(0);
-                    }
+                    System.out.println("You are unauthorized personnel, you will be locked out of this program");
+                    System.exit(0);
                 }
             }
         }

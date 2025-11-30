@@ -26,33 +26,33 @@ public class Staff {
                     System.out.println(Arrays.deepToString(information));
                     System.out.println();
                     break;
-                case 2://My Profile
-                    System.out.println("myprofile file: ");
-                    System.out.println();
-                    String[][] profile = {
-                            {"LOGS.pdf", "EMERGENCY_CONTACTS.pdf", "NDA_2025.pdf", "ESCAPE_PLAN.pdf"}
-                    };
-                    System.out.println(Arrays.deepToString(profile));
-                    System.out.println();
-                    break;
-                case 3: //Missle Info
-                    Employee_ID.Employee_ID(scan);
-                    System.out.println();
-                    System.out.println("Confidential missle files");
-                    System.out.println();
-                    String[][] missle = {
-                            {"TITAN_PROTO.pdf", "LAUNCH_COORDINATES", "[REDACTED]", "ATOMIC_NUKES.docx", "2ND_COLD_WAR.pdf"}
-                    };
-                    System.out.println(Arrays.deepToString(missle));
-                    System.out.println();
-                    break;
+                    case 2://My Profile
+                        System.out.println("myprofile file: ");
+                        System.out.println();
+                        String[][] profile = {
+                                {"LOGS.pdf", "EMERGENCY_CONTACTS.pdf", "NDA_2025.pdf", "ESCAPE_PLAN.pdf"}
+                        };
+                        System.out.println(Arrays.deepToString(profile));
+                        System.out.println();
+                        break;
+                    case 3: //Missle Info
+                        Employee_ID.Employee_ID(scan);
+                        System.out.println();
+                        System.out.println("Confidential missle files");
+                        System.out.println();
+                        String[][] missle = {
+                                {"TITAN_PROTO.pdf", "LAUNCH_COORDINATES", "[REDACTED]", "ATOMIC_NUKES.docx", "2ND_COLD_WAR.pdf"}
+                        };
+                        System.out.println(Arrays.deepToString(missle));
+                        System.out.println();
+                        break;
+                }
+                System.out.println("Anything else?(type \"yes\" to continue)");
+                String answer2 = scan.next();
+                if (!answer2.equalsIgnoreCase("yes")) {
+                    keepAsking3 = false;
+                    Have_A_Nice_Day obj2 = new Have_A_Nice_Day("Have a nice day" + ", Thank you staff member.");
+                }
             }
-            System.out.println("Anything else?");
-            String answer2 = scan.next();
-            if (!answer2.equalsIgnoreCase("yes")) {
-                keepAsking3 = false;
-                System.out.println("Have a nice day");
             }
         }
-    }
-}
