@@ -53,6 +53,6 @@ public class Staff {
                     keepAsking3 = false;
                     Have_A_Nice_Day obj2 = new Have_A_Nice_Day("Have a nice day" + ", Thank you staff member.");
                 }
-            }
-            }
         }
+    }
+}
