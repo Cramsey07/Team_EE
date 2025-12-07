@@ -1,8 +1,13 @@
+import java.util.Date;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        Date date = new Date();
+        System.out.println("Current date and time: " + date);
+        System.out.println();
         System.out.println("Welcome to the Department of Defense: Who is using this program today?");
         System.out.println("1. Civilian");
         System.out.println("2. Staff");

@@ -1,18 +1,15 @@
 import java.util.Scanner;
 
 public class PasswordValidator {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void PasswordV(Scanner scan) {
         System.out.print("Enter your password: ");
-        String password = scanner.nextLine();
+        String password = scan.nextLine();
 
         if (isValidPassword(password)) {
             System.out.println("Password is strong.");
         } else {
             System.out.println("Password does not meet the required conditions.");
         }
-
-        scanner.close();
     }
 
     public static boolean isValidPassword(String password) {
