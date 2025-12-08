@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        PasswordValidator.PasswordV(scan);
         Date date = new Date();
         System.out.println("Current date and time: " + date);
         System.out.println();
